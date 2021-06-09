@@ -1,12 +1,7 @@
-from re import sub
 import requests
 from bs4 import BeautifulSoup
 import pprint
-# import sys
 
-# page_num = sys.argv[1]
-
-# res = requests.get('https://news.ycombinator.com/news?p={page_num}')
 res = requests.get('https://news.ycombinator.com/news}')
 res2 = requests.get('https://news.ycombinator.com/news?p=2')
 
@@ -14,12 +9,6 @@ res2 = requests.get('https://news.ycombinator.com/news?p=2')
 # print(res,res.text)
 soup = BeautifulSoup(res.text,'html.parser')
 soup2 = BeautifulSoup(res2.text,'html.parser')
-# print(soup.body.contents)
-#find all paragraphs
-# print(soup.find_all('a'))
-# find first thing:
-# print(soup.find('a'))
-# print(soup.title)
 
 # selective picking: select() use css selector
 # print(soup.select('.storylink')[0])
