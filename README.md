@@ -9,6 +9,7 @@
 Since we want to build an ethical web scraper, we need to check the example.com/robots.txt file that check who is the 'User-Agent' and what we can scrape 'allow' or not 'Disallow'. If nothing is there, it implicitly means that we should be good to go.
 
 Ex. from Airbnb website:
+
 ![Airbnb robots.txt](./airbnb-robots-resized.png)
 
 ### Starting the project
